@@ -1,8 +1,8 @@
 <?php
 
-$DB_DSN = "mysql:host=localhost;dbname=id15602688_espace_commentaire;charset=utf8";
-$DB_USER = "id15602688_commentaire";
-$_DB_PASSWORD = "aFj!RP!EMq%WlO7d";
+$DB_DSN = "mysql:host=localhost;dbname=nom_de_ma_bdd;charset=utf8";
+$DB_USER = "nom_utilisateur";
+$_DB_PASSWORD = "MDP-de-ma_bdd";
 
 try 
 {
