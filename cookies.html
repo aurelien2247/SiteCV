@@ -1,0 +1,76 @@
+<!-------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!------ Ceci est ma page cookies.html ----------------------------------------------------------------------------------------------------------------------------------->
+<!-------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>info cookies</title>
+	<meta charset="utf-8">
+	<!-- liaison avec le fichier css et fonts (style de l'écriture) -->
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
+</head>
+<body>
+<!-------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!-------------------------------------------------------------------------------- Haut de page ---------------------------------------------------------------------->
+<!-------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+    <nav><!-- Explications sur la page principale-->
+		<div class="logo">
+			<a href="index.php#first_page">🏠 Accueil </a>
+		</div>
+		<ul class="nav-links">
+			<li><a href="index.php#portfolio">Projet réalisés</a></li>
+			<li><a href="index.php#contact">Me contacter</a></li>
+			<li><a href="avis.php?id=3" target="_blank" >Avis</a></li>
+		</ul>
+		<div class="burger">
+			<div class="line1"></div>
+			<div class="line2"></div>
+			<div class="line3"></div>
+		</div>
+	</nav><br><br><br>
+	<script type="text/javascript">
+		const navSlide = () => {
+			const burger = document.querySelector('.burger');
+			const nav = document.querySelector('.nav-links');
+			const navLinks = document.querySelectorAll('.nav-links li')
+			
+			burger.addEventListener('click',()=>{
+
+				nav.classList.toggle('nav-active');
+
+				navLinks.forEach((link, index) => {
+					if(link.style.animation) {
+						link.style.animation = '';
+					} else {
+						link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 +0.5}s`;
+					}
+				});
+			});
+		}
+		navSlide();
+	</script>
+<!-------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!-------------------------------------------------------------------------------- Millieu de page ------------------------------------------------------------------->
+<!-------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+	<div id="cookies">
+		<section><!-- Meme base que les mentions legales-->
+			<h1 class="Mentions"><br>Informations Cookies !<br></h1>
+			<h4 class="concep"><span>Les cookies c'est quoi ?</span></h4>
+			<h1 class="info1">Un cookie est un petit fichier déposé sur le disque dur de votre terminal <br>(Ordinateur, téléphone, tablette...) à votre insu, lors de la consultation de certains sites web, les cookies sont envoyés à votre navigateur.<br> En aucun cas un cookie peut permettre de remonter à une personne physique.</h1>
+			<h2 class="contenulitigieux"><span>Paramètre de votre navigateur</span></h2>
+			<h1 class="info2">Vous pouvez à tout moment refuser les cookies venant du site dans vos paramètres de navigation.</h1>
+		</section>
+	</div>
+</body>
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!--------------------------------------------------------------------------- Footer ---------------------------------------------------------------------------------->
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<footer>
+	<a href="MentionsLegales.html">Mentions légales</a>
+	<p>©2020 copyright</p>
+	<p>designed and producted by<span>&nbsp;Moignet Aurélien</span>
+	</p>
+</footer>
+</html>

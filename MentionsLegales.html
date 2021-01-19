@@ -1,0 +1,67 @@
+<html>
+<head>
+	<title>Cv</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
+</head>
+<body>
+	<!-- Haut de page -->
+	<nav>
+		<div class="logo">
+			<a href="index.php#first_page">🏠 Accueil </a>
+		</div>
+		<ul class="nav-links">
+			<li><a href="index.php#portfolio">Projet réalisés</a></li>
+			<li><a href="index.php#contact">Me contacter</a></li>
+			<li><a href="avis.php?id=3" target="_blank">Avis</a></li>
+		</ul>
+		<div class="burger">
+			<div class="line1"></div>
+			<div class="line2"></div>
+			<div class="line3"></div>
+		</div>
+	</nav><br><br><br>
+	<script type="text/javascript">
+		const navSlide = () => {
+			const burger = document.querySelector('.burger');
+			const nav = document.querySelector('.nav-links');
+			const navLinks = document.querySelectorAll('.nav-links li')
+			
+			burger.addEventListener('click',()=>{
+
+				nav.classList.toggle('nav-active');
+
+				navLinks.forEach((link, index) => {
+					if(link.style.animation) {
+						link.style.animation = '';
+					} else {
+						link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 +0.5}s`;
+					}
+				});
+			});
+		}
+		navSlide();
+	</script>
+	<!-- Millieu De Page-->
+	<div id="mentionslegales">
+		<section>
+			<h1 class="mentions"><br>Mentions Légales !<br></h1>
+			<h4 class="concep"><span>Conception / Responsable éditorial / Hébergeur</span></h4>
+			<h1 class="info1">Propriétaire: Aurélien<br> 22470,Plouézec<br> France<br><br>E-mail : aurelien.moignet22470@gmail.com<br>Tel : 07.82.23.95.15<br>Développé et réalisé par Aurélien
+				<br>hebergeur: 000webhost
+				<h2 class="contenulitigieux"><span>Contenu Litigieux</span></h2>
+				<h1 class="info2">Pour signaler un contenu litigieux exploité par un utilisateur du service,<br> ou si vous êtes victime d'une utilisation frauduleuse, contactez-nous.</h1>
+				<h2 class="PropriétéIntelectuelle"><span>Propriété Intellectuelle</span></h2>
+				<h1 class="info3">Conformément à la loi « informatique et libertés » du 06 janvier 1978 modifiée en 2004, ils bénéficient d’un droit d’accès, de suppression et de rectification des informations qui les concernent. Les utilisateurs du site s’engagent à fournir des informations vraies, exactes, à jour et complètes les concernant ou concernant leur entreprise. La reproduction de tout ou partie de ce site, est formellement interdite sauf accord préalable avec le createur du site. Le contenu est disponible pour un usage privé et non collectif.
+		</section>
+	</div>
+</body>
+<footer>
+	<a href="MentionsLegales.html">Mentions légales</a>
+	<p>©2020 copyright</p>
+	<p>designed and producted by<span>&nbsp;Moignet Aurélien</span>
+	</p>
+</footer>
+</html>
