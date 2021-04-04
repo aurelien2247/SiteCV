@@ -1,7 +1,6 @@
 <!-------------------------------------------------------------------------------------------------------------------------------------------------------------------->
-<!------ Ceci est un site portfolio que j'ai coder en regardant different codes deja existants et que----------------------------------------------------------------->
-<!----- j'ai repris sur internet ce code bien qu'il est existant je l'ai remis selon ce que je voulais, -------------------------------------------------------------->
-<!---------- ce projet m'a mis enormement de temps à le réaliser. Cette page est mma page principale(index.php) ------------------------------------------------------>
+<!------ Ceci est un site portfolio que j'ai codé en regardant different tuto ---------------------------------------------------------------------------------------->
+<!---------- ce projet m'a mis enormement de temps à le réaliser. Cette page est ma page principale(index.php) ------------------------------------------------------>
 <!-------------------------------------------------------------------------------------------------------------------------------------------------------------------->
 <!DOCTYPE html>
 <html>
